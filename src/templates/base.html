@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="top_navbar">
+      <div class="logo">Alerta Perú</div>
+      <nav class="top_menu">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre nosotros</a>
+      </nav>
+    </header>
+    <aside class="side_navbar">
+      <a href="#" class="side_icon"><img src="../static/img/terremoto.png" alt="terremoto" /></a>
+      <a href="#" class="side_icon"><img src="../static/img/ola.png" alt="tsunami" /></a>
+    </aside>
+    <main class="main_content">
+        {% block content %}
+
+        {% endblock %}
+    </main>
+  </body>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../static/js/mapa.js"></script>
+  <script src="../static/js/tabs.js"></script>
+</html>

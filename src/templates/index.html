@@ -1,0 +1,44 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="main_container">
+  <div id="map_container"></div>
+  <div id="info_container">
+    <div class="info_tabs" style="display: none;">
+      <h2>A</h2>
+      <button class="tab_button" data-tab="pronostico">Pronóstico</button>
+      <button class="tab_button" data-tab="estadisticas">Estadísticas</button>
+      <button class="tab_button" data-tab="antecedentes">Antecedentes</button>
+    </div>
+    <div id="tab_content">
+      <div class="welcome_message">
+        <h2>🌍 Bienvenido a Alerta Perú</h2>
+        <p class="intro_text">Sistema de monitoreo y pronóstico sísmico para el Perú</p>
+        
+        <div class="feature_grid">
+          <div class="feature_item">
+            <span class="feature_icon">🔮</span>
+            <h3>Pronóstico Sísmico</h3>
+            <p>Predicciones basadas en análisis de patrones históricos y frecuencia de eventos.</p>
+          </div>
+          
+          <div class="feature_item">
+            <span class="feature_icon">📊</span>
+            <h3>Estadísticas</h3>
+            <p>Visualiza datos estadísticos de actividad sísmica por región.</p>
+          </div>
+          
+          <div class="feature_item">
+            <span class="feature_icon">📅</span>
+            <h3>Antecedentes</h3>
+            <p>Consulta el historial completo de terremotos registrados.</p>
+          </div>
+        </div>
+        
+        <div class="instruction_box">
+          <p><strong>👆 Para comenzar:</strong> Haz clic en cualquier región del mapa para ver información detallada sobre su actividad sísmica.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
